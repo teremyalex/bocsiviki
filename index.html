@@ -15,21 +15,58 @@
 
 <section class="header">
 
-    <nav>
+    <nav class="desktop">
         <div>
-            <img src="img/logo.svg" alt="bocsi viki logo" class="logo">
-            <ul>
-                <li><a href="/konyha">Konyha</a></li>
-                <li><a href="/konyvem">Könyvem</a></li>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="#">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
                 <li><a href="/blog">blog</a></li>
-                <li><a href="/kedvezmenyek">kedvezmények</a></li>
-                <li><a href="/kapcsolat">kapcsolat</a></li>
-                <li><img src="img/search.svg" class="search"></li>
+                <li><a href="#">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
             </ul>
         </div>
-        <div class="fiok">
-            <a href=""><img src="img/signin.svg">Regisztráció</a>
-            <a href=""><img src="img/login.svg">Bejelentkezés</a>
+        <div>
+            <ul class="fiok">
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button class="mobil-bar"><img src="img/navbar.svg"></button>
+    <nav class="mobil">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul>
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('konyv')">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('kedvezmenyek')">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -96,14 +133,27 @@
 <section class="media">
     <div>
         <h3>Itt találkozhattál velünk a médiában</h3>
-        <div>
+        <div class="slider">
             <img src="img/novekedes.png">
             <img src="img/egeszsegkalauz.png">
             <img src="img/index.png">
+            <img src="img/womagic.png">
+            <img src="img/we_magazine.png">
+            <img src="img/veol.png">
+            <img src="img/senior-plus.png">
+            <img src="img/eszak.png">
+            <img src="img/uzlet-es-utazas.png">
+            <img src="img/jovotv.png">
             <img src="img/novekedes.png">
             <img src="img/egeszsegkalauz.png">
             <img src="img/index.png">
-
+            <img src="img/womagic.png">
+            <img src="img/we_magazine.png">
+            <img src="img/veol.png">
+            <img src="img/senior-plus.png">
+            <img src="img/eszak.png">
+            <img src="img/uzlet-es-utazas.png">
+            <img src="img/jovotv.png">
         </div>
     </div>
 </section>
@@ -123,44 +173,54 @@
         </div>
         <div class="sidebar">
             <div>
-                <img src="img/blog1.jpg">
-                <div>
-                    <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
-                    <div class="sidebar-cat">#DIÉTA</div>
-                    <p>2025/01/30</p>
-                </div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <img src="img/blog1.jpg">
-                <div>
-                    <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
-                    <div class="sidebar-cat">#DIÉTA</div>
-                    <p>2025/01/30</p>
-                </div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <img src="img/blog1.jpg">
-                <div>
-                    <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
-                    <div class="sidebar-cat">#DIÉTA</div>
-                    <p>2025/01/30</p>
-                </div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <img src="img/blog1.jpg">
-                <div>
-                    <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
-                    <div class="sidebar-cat">#DIÉTA</div>
-                    <p>2025/01/30</p>
-                </div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <img src="img/blog1.jpg">
-                <div>
-                    <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
-                    <div class="sidebar-cat">#DIÉTA</div>
-                    <p>2025/01/30</p>
-                </div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
             </div>
 
         </div>
@@ -195,43 +255,62 @@
 <footer>
     <div>
 
-        <div>
-            <div>
-                <img src="img/logo.png">
+        <div class="logos">
+            <div class="logo">
+                <img src="img/logo.svg">
             </div>
-            <div>
-                <img src="img/facebook.svg">
-                <img src="img/instagram.svg">
+            <div class="socials">
+                <a href="https://www.facebook.com/bocsiviki.hu"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/bocsiviki/"><img src="img/instagram.svg"></a>
             </div>
         </div>
+
+        <div class="links">
+            <div>
+                <h6>HASZNOS</h6>
+                <ul>
+                    <li><a href="/bocsiviki/vegzettsegeim.html">Végzettségeim</a></li>
+                    <li><a href="/bocsiviki/egyuttmukodo-orvosaink.html">Együttműködő orvosaink</a></li>
+                    <li><a href="/bocsiviki/gyik.html">GYIK</a></li>
+                    <li><a href="/bocsiviki/kisokos.html">Kisokos</a></li>
+                    <li><a href="/bocsiviki/taplalekkiegeszitok.html">Termékek</a></li>
+                    <li><a href="/bocsiviki/szereplesek.html">Szereplések</a></li>
+                    <li><a href="/bocsiviki/rolam.html">Rólam</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>KAPCSOLAT</h6>
+                <ul>
+                    <li>info@bocsiviki.hu</li>
+                    <li>moni@bocsiviki.hu</li>
+                </ul>
+            </div>
+            <div>
+                <h6>KONYHA</h6>
+                <ul>
+                    <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                    <li>konyha@bocsiviki.hu</li>
+                    <li>Ügyfélszolgálat: +3612053354</li>
+                </ul>
+            </div>
+            <div>
+                <h6>DOKUMENTUMOK</h6>
+                <ul>
+                    <li><a href="https://bocsiviki.hu/doc/aszf.pdf" target="_blank">Bocsiviki.hu ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/aszf-konyha.pdf" target="_blank">Biopiac ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem.pdf" target="_blank">Bocsiviki.hu adatkezelési tájékoztató</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem-konyha.pdf" target="_blank">Biopiac adatkezelési tájékoztató</a></li>
+                    <li><a href="/bocsiviki/impresszum.html">Impresszum</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">Copyright 2015-2025 © BocsiViki.hu Kft. Minden jog fenntartva.<br>A honlapon található legtöbb írás saját szellemi tulajdon, az anyagok engedély nélküli megosztása törvénybe ütköző cselekedet.</div>
     </div>
 </footer>
 
 
 </body>
 
-<script>
-    /*document.querySelectorAll(".media div div img").forEach(img => {
-        let position = 0
-        setInterval(() => {
-            position--
-            img.style.transform = `translateX(${position}px)`
-        }, 10)
-        const imgJump = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (!(entry.isIntersecting)) {
-                    position += window.innerWidth + img.offsetWidth
-                    const clone = img.cloneNode(true)
-                    document.querySelector(".media div div").appendChild(clone);
-                    img.remove();
-
-
-                }
-            })
-        })
-        imgJump.observe(img)
-    });
-*/
-
-</script>
+<script src="script.js"></script>
 </html>
